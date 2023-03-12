@@ -1,0 +1,24 @@
+@use 'font' as f;
+@use 'colors' as c;
+
+html {
+	box-sizing: border-box;
+	font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: f.$font;
+	background-color: c.$light-gray;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

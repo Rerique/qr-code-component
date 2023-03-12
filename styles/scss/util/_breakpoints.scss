@@ -1,0 +1,10 @@
+$screens: (
+	'sm': '375px',
+	'lg': '1440px',
+);
+
+@mixin breakpoint($size) {
+	@media (min-width: map-get($screens, $size)) {
+		@content;
+	}
+}

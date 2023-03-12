@@ -1,0 +1,35 @@
+@use '../util';
+@use '../globals';
+
+.card {
+	width: util.rem(320);
+	height: util.rem(500);
+	padding: 1rem;
+	border-radius: util.rem(15);
+	background-color: globals.$white;
+	box-shadow: 0 0 25px -10px rgba(0, 0, 0, 0.5);
+}
+
+.qr-code {
+	&__image {
+		width: 100%;
+		height: util.rem(290);
+		border-radius: util.rem(15);
+	}
+
+	&__text {
+		padding: 0.75rem;
+		margin-top: 0.25rem;
+	}
+
+	&__title {
+		color: globals.$dark-blue;
+		font-size: util.rem(22);
+		text-align: center;
+	}
+
+	&__subtitle {
+		color: globals.$grayish-blue;
+		text-align: center;
+	}
+}
